@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ComprarIA Components</title>
+    <link rel="stylesheet" href="css/estilo-main.css">
+    <link rel="stylesheet" href="css/estilo-menu.css">
+    <link rel="stylesheet" href="css/swiper.css">
+    <link rel="stylesheet" href="css/menu-producto.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Noto+Sans:wght@700&family=Permanent+Marker&family=Vina+Sans&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+<link rel="icon" type="image/x-icon" href="img-svg/70648-200.ico">
+</head>
+<body id="body">
+
+    <header>
+        <div class="icon__menu" id="btn_open">
+            <img src="img-svg/menu.svg">
+        </div>
+        <div class="icon__carrito" id="btn_carrito">
+            <img src="img-svg/carrito.png">
+            <span id="cantidadCarrito">0</span>
+        </div>
+    </header>
+    
+
+    <div class="menu__side" id="menu_side">
+
+        <div class="name__page">
+            <img src="img-svg/70648-200.png" height="35" width="35">
+            <h4>ComprarIA Components</h4>
+        </div>
+
+        <div class="options__menu">
+            <a href="#" class="selected">
+                <div class="option">
+                    <img src="img-svg/dashboard.svg" title="Inicio">
+                    <h4>inicio</h4>
+                </div>
+            </a>
+            <a href="productos.html" >
+                <div class="option">
+                    <img src="img-svg/productos.svg" title="Productos">
+                    <h4>Productos</h4>
+                </div>
+            </a>
+            <a href="contacto.html">
+                <div class="option">
+                    <img src="img-svg/telefono.svg" title="Contacto">
+                    <h4>Contacto</h4>
+                </div>
+            </a>
+            <a href="nosotros.html">
+                <div class="option">
+                    <img src="img-svg/nosotros.svg" title="Nosotros">
+                    <h4>Nosotros</h4>
+                </div>
+            </a>
+        </div>
+    </div>
+    <script src="java/menu.js"></script>
+    <script src="java/productos.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <div id="carrito"></div>
+    
+    <div class="overlay"></div>
+
+    <div class="menu-producto">   
+        <div class="container">
+            <div class="images-and-sizes">
+                <img alt="" src="/img-prod/Gabinetes/1596224833_680x_rgb_wht_build_door.png">
+                <div class="slideshow-buttons">
+                    <span></span>
+                    <span class="focus"></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+            <div class="product">
+                <div class="cerrar_menu">
+                <p>Gabinetes</p> <button class="cerrar" onclick="ocultarMenu()">x</button>
+                </div>
+                <h1>Gabinete Corsair 680x Crystal White RGB</h1>
+                <h2>$180.000</h2>
+                <p class="description">
+                    El CORSAIR Crystal Series 680X RGB es un chasis inteligente ATX de cristal templado de doble cámara que ofrece un magnífico flujo de aire y una iluminación de gran intensidad para refrigerar e iluminar con gran eficacia los sistemas más exigentes. 
+                </p>
+                <div class="buttons">
+                    <button class="like" onclick="Like()">
+                        <span>🤍</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div> 
+
+    <section class="contenido">
+        <div class="mostrador" id="mostrador">
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="icons">
+                            <i class="fa-solid fa-circle-arrow-left"></i>
+                            <i class="fa-regular fa-heart"></i>
+                        </div>
+                        <div class="product-content">
+                            <div class="product-txt">
+                                <span>US$193.99</span>
+                                <h3>Asus TUF Gaming X570-PLUS (WI-FI)</h3>
+                                <p>
+                                    Zócalo AMD AM4: Listo para procesadores AMD Ryzen de 2ª y 3ª generación para maximizar la conectividad y la velocidad con hasta dos unidades M.2, USB 3.2 Gen2 y AMD StoreMI
+                                    <br>Solución de potencia mejorada: componentes TUF de grado militar, zócalo Pro Cool y Digi plus VRM para una máxima durabilidad
+                                    <br>Enfriamiento integral: disipador térmico activo PCH, disipador térmico VRM, disipador térmico M.2, cabezales de ventilador híbridos y ventilador Xpert
+                                    <br>Conectividad de última generación: PCIe dual 13.1 ft.2 y USB 3.2 Gen 2 Tipo-A/Tipo-C
+                                    <br>Redes de juegos: Realtek L8200A Gigabit Ethernet, Intel 2x2 802.11ac Wi-Fi con soporte MU-MIMO, Bluetooth 5.0, TUF LANGuard y tecnología                                
+                                </p>
+                            </div>
+                            <div class="product-img">
+                                <img src="img-prod/Placa Madre/P_setting_xxx_0_90_end_692.png" alt="">
+                            </div>
+                        </div>
+                            <a href="#" class="btn-detalle" onclick="mostrarMenu()">Ver Detalles</a>                    </div>
+                    <div class="swiper-slide">
+                        <div class="icons">
+                            <i class="fa-solid fa-circle-arrow-left"></i>
+                            <img src="#" alt="">
+                            <i class="fa-regular fa-heart"></i>
+                         </div>
+                        <div class="product-content">
+                            <div class="product-txt">
+                                <span>US$2,312.68</span>
+                                <h3>GeForce RTX 4090</h3>
+                                <p>
+                                    Multiprocesadores NVIDIA Ada Lovelace Streaming: hasta 2 veces más rendimiento y eficiencia energética
+                                    <br>Núcleos tensores de 4ª generación: hasta 2 veces el rendimiento de IA
+                                    <br>Núcleos RT de tercera generación: rendimiento de trazado de rayos hasta 2X
+                                    <br>Ventiladores de tecnología axial ampliados para un 23% más de flujo de aire
+                                    <br>Nueva cámara de vapor patentada con disipador de calor fresado para temperaturas más bajas de la GPU
+                                </p>
+                            </div>
+                            <div class="product-img">
+                                <img src="img-prod/TARJETA GRAFICA/GeForce RTX 4090.png" alt="">
+                            </div>
+                        </div>
+                        <a href="#" class="btn-detalle" onclick="mostrarMenu()">Ver Detalles</a>                    </div>
+                    <div class="swiper-slide">
+                        <div class="icons">
+                            <i class="fa-solid fa-circle-arrow-left"></i>
+                            <img src="#" alt="">
+                            <i class="fa-regular fa-heart"></i>
+                        </div>
+                        <div class="product-content">
+                            <div class="product-txt">
+                                <span>US$329.99</span>
+                                <h3>ROG Strix 1000W Gold Aura Edition</h3>
+                                <p>
+                                    Para reducir la salida de ruido, el ventilador controlado por PWM se apaga por completo cuando la carga de la fuente de alimentación es del 60 por ciento o menos.
+                                    <br>Una certificación 80 Plus Gold es el resultado de condensadores japoneses y otros componentes premium.
+                                    <br>El impulsor del ventilador gira en una configuración de doble rodamiento de bolas que durará hasta el doble de tiempo que un diseño de cojinete de manguito.
+                                    <br>La tecnología 0dB te permite disfrutar de juegos ligeros en relativo silencio.                                </div>
+                            <div class="product-img">
+                                <img src="img-prod/Fuentes/17-320-038-12.png" alt="">
+                            </div>                    
+                        </div>
+                        <a href="#" class="btn-detalle" onclick="mostrarMenu()">Ver Detalles</a>                    </div>
+                    <div class="swiper-slide">
+                        <div class="icons">
+                            <i class="fa-solid fa-circle-arrow-left"></i>
+                            <img src="#" alt="">
+                            <i class="fa-regular fa-heart"></i>
+                        </div>
+                        <div class="product-content">
+                            <div class="product-txt">
+                                <span>US$233.60</span>
+                                <h3>Gabinete Corsair 680x Crystal White RGB</h3>
+                                <p>
+                                    Los ventiladores de refrigeración de 120 mm incluidos y el diseño Direct Airflow Path dirigen el aire frío hacia los componentes más calientes del ordenador.
+                                    <br>Tres galardonados ventiladores de la serie LL iluminan su sistema con un total de 48 LED RGB de direccionamiento individual.
+                                </p>
+                            </div>
+                            <div class="product-img">
+                                <img src="img-prod/Gabinetes/1596224833_680x_rgb_wht_build_door.png" alt="">
+                            </div>
+                            </div>
+                            <a href="#" class="btn-detalle" onclick="mostrarMenu()">Ver Detalles</a>                    </div>
+                    <div class="swiper-slide">
+                        <div class="icons">
+                            <i class="fa-solid fa-circle-arrow-left"></i>
+                            <img src="#" alt="">
+                            <i class="fa-regular fa-heart"></i>
+                        </div>
+                        <div class="product-content">
+                            <div class="product-txt">
+                                <span>US$576.79</span>
+                                <h3>Intel Core i9-11900k</h3>
+                                <p>
+                                    El procesador cuenta con zócalo Socket LGA-1200 para la instalación en la PCB
+                                    <br>16 MB de caché L3 recupera rápidamente los datos más utilizados disponibles para mejorar el rendimiento del sistema
+                                    <br>El diseño de 14 nm ofrece una gran eficiencia para la computación, ofrece un procesamiento ágil con costo, rendimiento y potencia equilibrados
+                                    <br>Para aumentar los gráficos y la calidad visual, el chipset tiene un controlador integrado de gráficos Intel UHD Graphics 750. Soporta hasta 3 monitores.                                </p>
+                            </div>
+                            <div class="product-img">
+                                <img src="img-prod/CPU/Intel Core i9-11900K.png" alt="">
+                            </div>
+                        </div>
+                        <a href="#" class="btn-detalle" onclick="mostrarMenu()">Ver Detalles</a>                    </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

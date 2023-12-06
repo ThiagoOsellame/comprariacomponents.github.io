@@ -1,0 +1,743 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ComprarIA Components-Productos</title>
+    <link rel="stylesheet" href="css/estilo-main.css">
+    <link rel="stylesheet" href="css/estilo-menu.css">
+    <link rel="stylesheet" href="css/menu-producto.css">
+    <link rel="stylesheet" href="css/swiper_productos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Noto+Sans:wght@700&family=Permanent+Marker&family=Vina+Sans&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+<link rel="icon" type="image/x-icon" href="img-svg/70648-200.ico">
+</head>
+<body id="body">
+
+    <header>
+        <div class="icon__menu" id="btn_open">
+            <img src="img-svg/menu.svg">
+        </div>
+        <div class="icon__carrito" id="btn_carrito" onclick="mostrarCarrito()">
+            <img src="img-svg/carrito.png">
+            <span id="cantidadCarrito">0</span>
+        </div>
+    </header>
+
+    <div class="menu__side" id="menu_side">
+
+        <div class="name__page">
+            <img src="img-svg/70648-200.png" height="35" width="35">
+            <h4>ComprarIA Components</h4>
+        </div>
+
+        <div class="options__menu">
+            <a href="index.html">
+                <div class="option">
+                    <img src="img-svg/dashboard.svg" title="Inicio">
+                    <h4>inicio</h4>
+                </div>
+            </a>
+            <a href="#" class="selected">
+                <div class="option">
+                    <img src="img-svg/productos.svg" title="Productos">
+                    <h4>Productos</h4>
+                </div>
+            </a>
+            <a href="contacto.html">
+                <div class="option">
+                    <img src="img-svg/telefono.svg" title="Contacto">
+                    <h4>Contacto</h4>
+                </div>
+            </a>
+            <a href="nosotros.html">
+                <div class="option">
+                    <img src="img-svg/nosotros.svg" title="Nosotros">
+                    <h4>Nosotros</h4>
+                </div>
+            </a>
+        </div>
+
+    </div>
+    <script src="java/menu.js"></script>
+    <script src="java/productos.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <div id="carrito"></div>
+
+    <div class="overlay"></div>
+
+    <div class="menu-producto">   
+        <div class="container">
+            <div class="images-and-sizes">
+                <img alt="" src="/img-prod/Gabinetes/1596224833_680x_rgb_wht_build_door.png">
+                <div class="slideshow-buttons">
+                    <span></span>
+                    <span class="focus"></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+            <div class="product">
+                <div class="cerrar_menu">
+                <p>Gabinetes</p> <button class="cerrar" onclick="ocultarMenu()">x</button>
+                </div>
+                <h1>Gabinete Corsair 680x Crystal White RGB</h1>
+                <h2>$180.000</h2>
+                <p class="description">
+                    El CORSAIR Crystal Series 680X RGB es un chasis inteligente ATX de cristal templado de doble cámara que ofrece un magnífico flujo de aire y una iluminación de gran intensidad para refrigerar e iluminar con gran eficacia los sistemas más exigentes. 
+                </p>
+                <div class="buttons">
+                    <button class="like" onclick="Like()">
+                        <span>🤍</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div> 
+    <section class="contenido">
+    <div class="mostrador" id="mostrador">
+        <div class="swiper mySwiper">
+            <h3>CPU</h3>
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="item">
+                        <div class="contenedor-foto">
+                            <img src="img-prod/CPU/Intel Core i9-11900K.png" alt="">
+                            <p class="descripcion">Intel Core i9-11900k</p>
+                            <p class="precio">US$576.79</p>
+                            <a href="#" class="btn-detalle" onclick="mostrarMenu()">Ver Detalles</a>
+                            <a href="#" class="btn-1" id="btn-producto-1" onclick="cambiarEstiloBoton(this);">Agregar Al Carrito</a>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="contenedor-foto">
+                            <img src="img-prod/CPU/Procesador_Intel_Core_i7_9700.webp" alt="">
+                            <p class="descripcion">Intel Core i7 10700k</p>
+                            <p class="precio">US$271.99</p>
+                            <a href="#" class="btn-detalle" onclick="mostrarMenu()">Ver Detalles</a>
+                            <a href="#" class="btn-1" id="btn-producto-1" onclick="cambiarEstiloBoton(this);">Agregar Al Carrito</a>
+
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="contenedor-foto">
+                            <img src="img-prod/CPU/Intel i5.png" alt="">
+                            <p class="descripcion">Intel Core i5 7400</p>
+                            <p class="precio">US$270.99</p>
+                            <a href="#" class="btn-detalle" onclick="mostrarMenu()">Ver Detalles</a>
+                            <a href="#" class="btn-1" id="btn-producto-1" onclick="cambiarEstiloBoton(this);">Agregar Al Carrito</a>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="item">
+                        <div class="contenedor-foto">
+                            <img src="img-prod/CPU/threadripper.png" alt="">
+                            <p class="descripcion">AMD Ryzen Threadripper 3970x</p>
+                            <p class="precio">US$2,100.99</p>
+                            <a href="#" class="btn-detalle" onclick="mostrarMenu()">Ver Detalles</a>
+                            <a href="#" class="btn-1" id="btn-producto-1" onclick="cambiarEstiloBoton(this);">Agregar Al Carrito</a>
+
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="contenedor-foto">
+                            <img src="img-prod/CPU/1761310-amd-ryzen-7-7000-series-PIB-angle-1260x709.webp" alt="">
+                            <p class="descripcion">AMD Ryzen 7 7000 series</p>
+                            <p class="precio">US$319.00</p>
+                            <a href="#" class="btn-detalle" onclick="mostrarMenu()">Ver Detalles</a>
+                            <a href="#" class="btn-1" id="btn-producto-1" onclick="cambiarEstiloBoton(this);">Agregar Al Carrito</a>
+
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="contenedor-foto">
+                            <img src="img-prod/CPU/AMD. CPU RYZEN 5 1600.png" alt="">
+                            <p class="descripcion">AMD Ryzen 7 1700</p>
+                            <p class="precio">US$215.00</p>
+                            <a href="#" class="btn-detalle" onclick="mostrarMenu()">Ver Detalles</a>
+                            <a href="#" class="btn-1" id="btn-producto-1" onclick="cambiarEstiloBoton(this);">Agregar Al Carrito</a>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+        <div class="swiper mySwiper">
+            <h3>REFRIGERADOR DE CPU</h3>
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="item">
+                        <div class="contenedor-foto">
+                            <img src="img-prod/refrigeracion/be_quiet_dark_rock_slim_air_1508511.png" alt="">
+                            <p class="descripcion">Be Quiet! Dark Rock Slim Cooler</p>
+                            <p class="precio">US$59.90</p>
+                            <a href="#" class="btn-detalle" onclick="mostrarMenu()">Ver Detalles</a>
+                            <a href="#" class="btn-1" id="btn-producto-1" onclick="cambiarEstiloBoton(this);">Agregar Al Carrito</a>
+
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="contenedor-foto">
+                            <img src="img-prod/refrigeracion/cooler master wraith ripper cooler.png" alt="">
+                            <p class="descripcion">Cooler Master Wraith Ripper CPU cooler</p>
+                            <p class="precio">US$269.00</p>
+                            <a href="#" class="btn-detalle" onclick="mostrarMenu()">Ver Detalles</a>
+                            <a href="#" class="btn-1" id="btn-producto-1" onclick="cambiarEstiloBoton(this);">Agregar Al Carrito</a>
+
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="contenedor-foto">
+                            <img src="img-prod/refrigeracion/nzxt-kraken-x42-rgb.png" alt="">
+                            <p class="descripcion">NZXT Kraken X42 RGB CPU cooler</p>
+                            <p class="precio">US$159.99</p>
+                            <a href="#" class="btn-detalle" onclick="mostrarMenu()">Ver Detalles</a>
+                            <a href="#" class="btn-1" id="btn-producto-1" onclick="cambiarEstiloBoton(this);">Agregar Al Carrito</a>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="item">
+                        <div class="contenedor-foto">
+                            <img src="img-prod/refrigeracion/corsair h100_rgb.png" alt="">
+                            <p class="descripcion">Corsair H100i RGB cooler</p>
+                            <p class="precio">US$119.99</p>
+                            <a href="#" class="btn-detalle" onclick="mostrarMenu()">Ver Detalles</a>
+                            <a href="#" class="btn-1" id="btn-producto-1" onclick="cambiarEstiloBoton(this);">Agregar Al Carrito</a>
+
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="contenedor-foto">
+                            <img src="img-prod/refrigeracion/evga-clc-280-AiO.png" alt="">
+                            <p class="descripcion">EVGA Clc 280 cooler</p>
+                            <p class="precio">US$209.99</p>
+                            <a href="#" class="btn-detalle" onclick="mostrarMenu()">Ver Detalles</a>
+                            <a href="#" class="btn-1" id="btn-producto-1" onclick="cambiarEstiloBoton(this);">Agregar Al Carrito</a>
+
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="contenedor-foto">
+                            <img src="img-prod/refrigeracion/corsair masterliquid ml120l v2 rgb.png" alt="">
+                            <p class="descripcion">Corsair Masterliquid ml120l v2</p>
+                            <p class="precio">US$134.99</p>
+                            <a href="#" class="btn-detalle" onclick="mostrarMenu()">Ver Detalles</a>
+                            <a href="#" class="btn-1" id="btn-producto-1" onclick="cambiarEstiloBoton(this);">Agregar Al Carrito</a>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+        <div class="swiper mySwiper">
+            <h3>PLACA BASE</h3>
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="item">
+                        <div class="contenedor-foto">
+                            <img src="img-prod/Placa Madre/P_setting_xxx_0_90_end_692.png" alt="">
+                            <p class="descripcion">Asus TUF Gaming X570-PLUS (WI-FI)</p>
+                            <p class="precio">US$193.99</p>
+                            <a href="#" class="btn-detalle" onclick="mostrarMenu()">Ver Detalles</a>
+                            <a href="#" class="btn-1" id="btn-producto-1" onclick="cambiarEstiloBoton(this);">Agregar Al Carrito</a>
+
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="contenedor-foto">
+                            <img src="img-prod/Placa Madre/1019-producto-motherboard-msi-mag-z590-gaming-plus-s1200-1669.png" alt="">
+                            <p class="descripcion">MSI Mag Z590 Gaming Plus</p>
+                            <p class="precio">US$299.99</p>
+                            <a href="#" class="btn-detalle" onclick="mostrarMenu()">Ver Detalles</a>
+                            <a href="#" class="btn-1" id="btn-producto-1" onclick="cambiarEstiloBoton(this);">Agregar Al Carrito</a>
+
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="contenedor-foto">
+                            <img src="img-prod/Placa Madre/B560M Pro4(M1).png" alt="">
+                            <p class="descripcion">AsRock B560M Pro4</p>
+                            <p class="precio">US$152.80</p>
+                            <a href="#" class="btn-detalle" onclick="mostrarMenu()">Ver Detalles</a>
+                            <a href="#" class="btn-1" id="btn-producto-1" onclick="cambiarEstiloBoton(this);">Agregar Al Carrito</a>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="item">
+                        <div class="contenedor-foto">
+                            <img src="img-prod/Placa Madre/mother-gigabyte-b660m-aorus-pro-ax-ddr4-s1700-0.png" alt="">
+                            <p class="descripcion">Aorus Gigabyte b660m Pro</p>
+                            <p class="precio">US$209.63</p>
+                            <a href="#" class="btn-detalle" onclick="mostrarMenu()">Ver Detalles</a>
+                            <a href="#" class="btn-1" id="btn-producto-1" onclick="cambiarEstiloBoton(this);">Agregar Al Carrito</a>
+
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="contenedor-foto">
+                            <img src="img-prod/Placa Madre/msi z390 gaming pro carbon.png" alt="">
+                            <p class="descripcion">MSI z390 Gaming Pro Carbon</p>
+                            <p class="precio">US$299.99</p>
+                            <a href="#" class="btn-detalle" onclick="mostrarMenu()">Ver Detalles</a>
+                            <a href="#" class="btn-1" id="btn-producto-1" onclick="cambiarEstiloBoton(this);">Agregar Al Carrito</a>
+
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="contenedor-foto">
+                            <img src="img-prod/Placa Madre/ROG-STRIX-B450-F-GAMING-II-1.png" alt="">
+                            <p class="descripcion">ROG Strix B450-F GAMING II</p>
+                            <p class="precio">US$107.28</p>
+                            <a href="#" class="btn-detalle" onclick="mostrarMenu()">Ver Detalles</a>
+                            <a href="#" class="btn-1" id="btn-producto-1" onclick="cambiarEstiloBoton(this);">Agregar Al Carrito</a>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+        <div class="swiper mySwiper">
+            <h3>MEMORIA</h3>
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="item">
+                        <div class="contenedor-foto">
+                            <img src="img-prod/RAM/1607614557_viper8gbrgb.png" alt="">
+                            <p class="descripcion">Patriot Viper Gaming Serie RGB DDR4 DRAM 4133MHz 16GB</p>
+                            <p class="precio">US$221.78</p>
+                            <a href="#" class="btn-detalle" onclick="mostrarMenu()">Ver Detalles</a>
+                            <a href="#" class="btn-1" id="btn-producto-1" onclick="cambiarEstiloBoton(this);">Agregar Al Carrito</a>
+
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="contenedor-foto">
+                            <img src="img-prod/RAM/adata xpg spectrix d60g rgb.png" alt="">
+                            <p class="descripcion">XPG Spectrix D60G rgb</p>
+                            <p class="precio">US$109.99</p>
+                            <a href="#" class="btn-detalle" onclick="mostrarMenu()">Ver Detalles</a>
+                            <a href="#" class="btn-1" id="btn-producto-1" onclick="cambiarEstiloBoton(this);">Agregar Al Carrito</a>
+
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="contenedor-foto">
+                            <img src="img-prod/RAM/corsair-vengeance-pro-rgb.png" width="300px" height="100px">
+                            <p class="descripcion">Corsair Vengeance Pro rgb</p>
+                            <p class="precio">US$79.99</p>
+                            <a href="#" class="btn-detalle" onclick="mostrarMenu()">Ver Detalles</a>
+                            <a href="#" class="btn-1" id="btn-producto-1" onclick="cambiarEstiloBoton(this);">Agregar Al Carrito</a>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="item">
+                        <div class="contenedor-foto">
+                            <img src="img-prod/RAM/Corsair.png" alt="">
+                            <p class="descripcion">orsair Vengeance RGB Pro SL 32GB</p>
+                            <p class="precio">US$84.99</p>
+                            <a href="#" class="btn-detalle" onclick="mostrarMenu()">Ver Detalles</a>
+                            <a href="#" class="btn-1" id="btn-producto-1" onclick="cambiarEstiloBoton(this);">Agregar Al Carrito</a>
+
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="contenedor-foto">
+                            <img src="img-prod/RAM/g skill trident z rgb.png" alt="">
+                            <p class="descripcion">G.Skill Trident Z rgb</p>
+                            <p class="precio">US$54.99</p>
+                            <a href="#" class="btn-detalle" onclick="mostrarMenu()">Ver Detalles</a>
+                            <a href="#" class="btn-1" id="btn-producto-1" onclick="cambiarEstiloBoton(this);">Agregar Al Carrito</a>
+
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="contenedor-foto">
+                            <img src="img-prod/RAM/Team Group T-Force Dark Z.png" alt="">
+                            <p class="descripcion">Team Group T-Force Dark Z</p>
+                            <p class="precio">US$41.31</p>
+                            <a href="#" class="btn-detalle" onclick="mostrarMenu()">Ver Detalles</a>
+                            <a href="#" class="btn-1" id="btn-producto-1" onclick="cambiarEstiloBoton(this);">Agregar Al Carrito</a>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+        <div class="swiper mySwiper">
+            <h3>TARJETA GRÁFICA</h3>
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="item">
+                        <div class="contenedor-foto">
+                            <img src="img-prod/TARJETA GRAFICA/GeForce RTX 3090 Ti.png" width="350px">
+                            <p class="descripcion">GeForce RTX 3090 Ti</p>
+                            <p class="precio">US$1,245.80</p>
+                            <a href="#" class="btn-detalle" onclick="mostrarMenu()">Ver Detalles</a>
+                            <a href="#" class="btn-1" id="btn-producto-1" onclick="cambiarEstiloBoton(this);">Agregar Al Carrito</a>
+
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="contenedor-foto">
+                            <img src="img-prod/TARJETA GRAFICA/GeForce-RTX-4070-Ti.png" alt="">
+                            <p class="descripcion">GeForce RTX 4070 Ti</p>
+                            <p class="precio">US$899.99</p>
+                            <a href="#" class="btn-detalle" onclick="mostrarMenu()">Ver Detalles</a>
+                            <a href="#" class="btn-1" id="btn-producto-1" onclick="cambiarEstiloBoton(this);">Agregar Al Carrito</a>
+
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="contenedor-foto">
+                            <img src="img-prod/TARJETA GRAFICA/GeForce-RTX-4080.png" alt="">
+                            <p class="descripcion">GeForce RTX 4080</p>
+                            <p class="precio">US$1,297.99</p>
+                            <a href="#" class="btn-detalle" onclick="mostrarMenu()">Ver Detalles</a>
+                            <a href="#" class="btn-1" id="btn-producto-1" onclick="cambiarEstiloBoton(this);">Agregar Al Carrito</a>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="item">
+                        <div class="contenedor-foto">
+                            <img src="img-prod/TARJETA GRAFICA/GeForce RTX 4090.png" alt="">
+                            <p class="descripcion">GeForce RTX 4090</p>
+                            <p class="precio">US$2,312.68</p>
+                            <a href="#" class="btn-detalle" onclick="mostrarMenu()">Ver Detalles</a>
+                            <a href="#" class="btn-1" id="btn-producto-1" onclick="cambiarEstiloBoton(this);">Agregar Al Carrito</a>
+
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="contenedor-foto">
+                            <img src="img-prod/TARJETA GRAFICA/Radeon PRO W7900.png" alt="">
+                            <p class="descripcion">Radeon PRO W7900</p>
+                            <p class="precio">US$999.99</p>
+                            <a href="#" class="btn-detalle" onclick="mostrarMenu()">Ver Detalles</a>
+                            <a href="#" class="btn-1" id="btn-producto-1" onclick="cambiarEstiloBoton(this);">Agregar Al Carrito</a>
+
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="contenedor-foto">
+                            <img src="img-prod/TARJETA GRAFICA/Radeon RX 7900 XTX.png" alt="">
+                            <p class="descripcion">Radeon RX 7900 XTX</p>
+                            <p class="precio">US$979.99</p>
+                            <a href="#" class="btn-detalle" onclick="mostrarMenu()">Ver Detalles</a>
+                            <a href="#" class="btn-1" id="btn-producto-1" onclick="cambiarEstiloBoton(this);">Agregar Al Carrito</a>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+        <div class="swiper mySwiper">
+            <h3>DISCO DURO</h3>
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="item">
+                        <div class="contenedor-foto">
+                            <img src="img-prod/Disco Duro/Samsung-870-EVO.png" alt="">
+                            <p class="descripcion">SAMSUNG 870 EVO 2.5 pulgadas SATA III SSD interno</p>
+                            <p class="precio">US$129.99</p>
+                            <a href="#" class="btn-detalle" onclick="mostrarMenu()">Ver Detalles</a>
+                            <a href="#" class="btn-1" id="btn-producto-1" onclick="cambiarEstiloBoton(this);">Agregar Al Carrito</a>
+
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="contenedor-foto">
+                            <img src="img-prod/Disco Duro/Seagate Barracuda.png" alt="">
+                            <p class="descripcion">Seagate BarraCuda - Disco duro interno de 8 TB, 3.5 pulgadas, SATA 6 Gb / s, 5400 RPM, 256 MB caché</p>
+                            <p class="precio">US$129.99</p>
+                            <a href="#" class="btn-detalle" onclick="mostrarMenu()">Ver Detalles</a>
+                            <a href="#" class="btn-1" id="btn-producto-1" onclick="cambiarEstiloBoton(this);">Agregar Al Carrito</a>
+
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="contenedor-foto">
+                            <img src="img-prod/Disco Duro/Toshiba L200.png" alt="">
+                            <p class="descripcion">Toshiba HDWL120XZSTA L200 2TB</p>
+                            <p class="precio">US$82.99</p>
+                            <a href="#" class="btn-detalle" onclick="mostrarMenu()">Ver Detalles</a>
+                            <a href="#" class="btn-1" id="btn-producto-1" onclick="cambiarEstiloBoton(this);">Agregar Al Carrito</a>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="item">
+                        <div class="contenedor-foto">
+                            <img src="img-prod/Disco Duro/Toshiba X300.png" alt="">
+                            <p class="descripcion">TOSHIBA X300 - Retail de 14TB de alto rendimiento</p>
+                            <p class="precio">US$709.01</p>
+                            <a href="#" class="btn-detalle" onclick="mostrarMenu()">Ver Detalles</a>
+                            <a href="#" class="btn-1" id="btn-producto-1" onclick="cambiarEstiloBoton(this);">Agregar Al Carrito</a>
+
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="contenedor-foto">
+                            <img src="img-prod/Disco Duro/WD Black.png" alt="">
+                            <p class="descripcion">WD_BLACK P10 Game Drive</p>
+                            <p class="precio">US$139.99</p>
+                            <a href="#" class="btn-detalle" onclick="mostrarMenu()">Ver Detalles</a>
+                            <a href="#" class="btn-1" id="btn-producto-1" onclick="cambiarEstiloBoton(this);">Agregar Al Carrito</a>
+
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="contenedor-foto">
+                            <img src="img-prod/Disco Duro/WD Blue.png" alt="">
+                            <p class="descripcion">Western Digital WD20SPZX - Disco Duro Móvil Azul 2TB WD - 5400 RPM, SATA 6 Gb/s, caché de 128 MB, 2.5</p>
+                            <p class="precio">US$59.65</p>
+                            <a href="#" class="btn-detalle" onclick="mostrarMenu()">Ver Detalles</a>
+                            <a href="#" class="btn-1" id="btn-producto-1" onclick="cambiarEstiloBoton(this);">Agregar Al Carrito</a>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+        <div class="swiper mySwiper">
+            <h3>FUENTE DE ALIMENTACION</h3>
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="item">
+                        <div class="contenedor-foto">
+                            <img src="img-prod/Fuentes/17-320-038-12.png" alt="">
+                            <p class="descripcion">ROG Strix 1000W Gold Aura Edition</p>
+                            <p class="precio">US$329.99</p>
+                            <a href="#" class="btn-detalle" onclick="mostrarMenu()">Ver Detalles</a>
+                            <a href="#" class="btn-1" id="btn-producto-1" onclick="cambiarEstiloBoton(this);">Agregar Al Carrito</a>
+
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="contenedor-foto">
+                            <img src="img-prod/Fuentes/Antec HCP Platinum.png" alt="">
+                            <p class="descripcion">Antec HCP Platinum</p>
+                            <p class="precio">US$161.42</p>
+                            <a href="#" class="btn-detalle" onclick="mostrarMenu()">Ver Detalles</a>
+                            <a href="#" class="btn-1" id="btn-producto-1" onclick="cambiarEstiloBoton(this);">Agregar Al Carrito</a>
+
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="contenedor-foto">
+                            <img src="img-prod/Fuentes/be quiet! Dark Power Pro.png" alt="">
+                            <p class="descripcion">be quiet! Dark Power Pro 13 Fuente de alimentación de 1600 W </p>
+                            <p class="precio">US$459.90</p>
+                            <a href="#" class="btn-detalle" onclick="mostrarMenu()">Ver Detalles</a>
+                            <a href="#" class="btn-1" id="btn-producto-1" onclick="cambiarEstiloBoton(this);">Agregar Al Carrito</a>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="item">
+                        <div class="contenedor-foto">
+                            <img src="img-prod/Fuentes/Cooler Master MasterWatt Maker 1200 MiJ.png" alt="">
+                            <p class="descripcion">Cooler Master MasterWatt Maker 1200 MiJ</p>
+                            <p class="precio">US$239.99</p>
+                            <a href="#" class="btn-detalle" onclick="mostrarMenu()">Ver Detalles</a>
+                            <a href="#" class="btn-1" id="btn-producto-1" onclick="cambiarEstiloBoton(this);">Agregar Al Carrito</a>
+
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="contenedor-foto">
+                            <img src="img-prod/Fuentes/Corsair AXi Series.png" alt="">
+                            <p class="descripcion">Corsair AXi Series</p>
+                            <p class="precio">US$126.85</p>
+                            <a href="#" class="btn-detalle" onclick="mostrarMenu()">Ver Detalles</a>
+                            <a href="#" class="btn-1" id="btn-producto-1" onclick="cambiarEstiloBoton(this);">Agregar Al Carrito</a>
+
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="contenedor-foto">
+                            <img src="img-prod/Fuentes/Seasonic PRIME Series.png" alt="">
+                            <p class="descripcion">Seasonic Flagship Prime Series SSR-1000PD 1000W Platinum Full Modular ATX12V y EPS12V 5.315 in FDB</p>
+                            <p class="precio">US$290.00</p>
+                            <a href="#" class="btn-detalle" onclick="mostrarMenu()">Ver Detalles</a>
+                            <a href="#" class="btn-1" id="btn-producto-1" onclick="cambiarEstiloBoton(this);">Agregar Al Carrito</a>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+        <div class="swiper mySwiper">
+            <h3>GABINETE</h3>
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="item">
+                        <div class="contenedor-foto">
+                            <img src="img-prod/Gabinetes/1596224833_680x_rgb_wht_build_door.png" alt="">
+                            <p class="descripcion">Gabinete Corsair 680x Crystal White RGB</p>
+                            <p class="precio">US$233.60</p>
+                            <a href="#" class="btn-detalle" onclick="mostrarMenu()">Ver Detalles</a>
+                            <a href="#" class="btn-1" id="btn-producto-1" onclick="cambiarEstiloBoton(this);">Agregar Al Carrito</a>
+
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="contenedor-foto">
+                            <img src="img-prod/Gabinetes/Bgears-b-Optillusion-Gaming-PC-ATX.png" alt="">
+                            <p class="descripcion">Bgears b-Optillusion Gaming PC ATX</p>
+                            <p class="precio">US$95.53</p>
+                            <a href="#" class="btn-detalle" onclick="mostrarMenu()">Ver Detalles</a>
+                            <a href="#" class="btn-1" id="btn-producto-1" onclick="cambiarEstiloBoton(this);">Agregar Al Carrito</a>
+
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="contenedor-foto">
+                            <img src="img-prod/Gabinetes/Bgears-b-Voguish-Gaming-PC.png" alt="">
+                            <p class="descripcion">Bgears b-Voguish Gaming PC</p>
+                            <p class="precio">US$52.99</p>
+                            <a href="#" class="btn-detalle" onclick="mostrarMenu()">Ver Detalles</a>
+                            <a href="#" class="btn-1" id="btn-producto-1" onclick="cambiarEstiloBoton(this);">Agregar Al Carrito</a>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="item">
+                        <div class="contenedor-foto">
+                            <img src="img-prod/Gabinetes/GAMDIAS-ATX-Mid-Tower.png" alt="">
+                            <p class="descripcion">GAMDIAS ATX Mid Tower</p>
+                            <p class="precio">US$59.99</p>
+                            <a href="#" class="btn-detalle" onclick="mostrarMenu()">Ver Detalles</a>
+                            <a href="#" class="btn-1" id="btn-producto-1" onclick="cambiarEstiloBoton(this);">Agregar Al Carrito</a>
+
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="contenedor-foto">
+                            <img src="img-prod/Gabinetes/KEDIERS-PC-Case.png" alt="">
+                            <p class="descripcion">KEDIERS PC Case</p>
+                            <p class="precio">US$89.99</p>
+                            <a href="#" class="btn-detalle" onclick="mostrarMenu()">Ver Detalles</a>
+                            <a href="#" class="btn-1" id="btn-producto-1" onclick="cambiarEstiloBoton(this);">Agregar Al Carrito</a>
+
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="contenedor-foto">
+                            <img src="img-prod/Gabinetes/MUSETEX-PC-CASE-E-ATX.png" alt="">
+                            <p class="descripcion">MUSETEX PC CASE E-ATX</p>
+                            <p class="precio">US$129.97</p>
+                            <a href="#" class="btn-detalle" onclick="mostrarMenu()">Ver Detalles</a>
+                            <a href="#" class="btn-1" id="btn-producto-1" onclick="cambiarEstiloBoton(this);">Agregar Al Carrito</a>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+        <div class="swiper mySwiper">
+            <h3>PERIFÉRICOS</h3>
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="item">
+                        <div class="contenedor-foto">
+                            <img src="img-prod/Perifericos/HyperX Cloud III.png" alt="">
+                            <p class="descripcion">HyperX Cloud III</p>
+                            <p class="precio">US$67.61</p>
+                            <a href="#" class="btn-detalle" onclick="mostrarMenu()">Ver Detalles</a>
+                            <a href="#" class="btn-1" id="btn-producto-1" onclick="cambiarEstiloBoton(this);">Agregar Al Carrito</a>
+
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="contenedor-foto">
+                            <img src="img-prod/Perifericos/Kit de teclado y mouse gamer Redragon K552RGB-BA.png" alt="">
+                            <p class="descripcion">Kit de teclado y mouse gamer Redragon K552RGB-BA</p>
+                            <p class="precio">US$77.61</p>
+                            <a href="#" class="btn-detalle" onclick="mostrarMenu()">Ver Detalles</a>
+                            <a href="#" class="btn-1" id="btn-producto-1" onclick="cambiarEstiloBoton(this);">Agregar Al Carrito</a>
+
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="contenedor-foto">
+                            <img src="img-prod/Perifericos/Shure-SM7dB.png" alt="">
+                            <p class="descripcion">Shure SM7dB Micrófono</p>
+                            <p class="precio">US$499.00</p>
+                            <a href="#" class="btn-detalle" onclick="mostrarMenu()">Ver Detalles</a>
+                            <a href="#" class="btn-1" id="btn-producto-1" onclick="cambiarEstiloBoton(this);">Agregar Al Carrito</a>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="item">
+                        <div class="contenedor-foto">
+                            <img src="img-prod/Perifericos/TUF Gaming vg279ql1a.png" alt="">
+                            <p class="descripcion">ASUS TUF Gaming VG279QL1A - Monitor HDR de 27 pulgadas, 1080P Full HD, 165Hz</p>
+                            <p class="precio">US$219.00</p>
+                            <a href="#" class="btn-detalle" onclick="mostrarMenu()">Ver Detalles</a>
+                            <a href="#" class="btn-1" id="btn-producto-1" onclick="cambiarEstiloBoton(this);">Agregar Al Carrito</a>
+
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="contenedor-foto">
+                            <img src="img-prod/Perifericos/Razer Goliathus Extended Chroma Gaming Mousepad.png" width="350px">
+                            <p class="descripcion">Razer Goliathus Extended Chroma Gaming Mousepad</p>
+                            <p class="precio">US$53.99</p>
+                            <a href="#" class="btn-detalle" onclick="mostrarMenu()">Ver Detalles</a>
+                            <a href="#" class="btn-1" id="btn-producto-1" onclick="cambiarEstiloBoton(this);">Agregar Al Carrito</a>
+
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="contenedor-foto">
+                            <img src="img-prod/Perifericos/Razer-Mouse-Bungee-V3-Chroma.png" alt="">
+                            <p class="descripcion">Razer Mouse Bungee V3 Chroma</p>
+                            <p class="precio">US$57.86</p>
+                            <a href="#" class="btn-detalle" onclick="mostrarMenu()">Ver Detalles</a>
+                            <a href="#" class="btn-1" id="btn-producto-1" onclick="cambiarEstiloBoton(this);">Agregar Al Carrito</a>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+    </div>
+</section>
+</body>
+</html>

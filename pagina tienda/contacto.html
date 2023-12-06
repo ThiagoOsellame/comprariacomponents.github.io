@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ComprarIA Components-Contactos</title>
+    <link rel="stylesheet" href="css/estilo-main.css">
+    <link rel="stylesheet" href="css/estilo-menu.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    rel="stylesheet">
+    <link rel="stylesheet" href="css/contacto.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css'>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Noto+Sans:wght@700&family=Permanent+Marker&family=Vina+Sans&display=swap" rel="stylesheet">
+<link rel="icon" type="image/x-icon" href="img-svg/70648-200.ico">
+</head>
+<body id="body">
+
+    <header>
+        <div class="icon__menu" id="btn_open">
+            <img src="img-svg/menu.svg">
+        </div>
+    </header>
+
+        <div class="contacto">
+            <h4 id="contactos">Contactos</h4>
+         </div>
+         <div class="contenedor-contactos">
+          <div class="facebook">
+            <p id="facebook">
+                Puedes contactarnos a través de facebook para hacernos consultas privadas sobre componente en especifico.
+            </p>
+            <div class="icon">
+              <a href="https://www.facebook.com">
+              <svg heigth="80" width="80">
+                <circle cx="30" cy="30" r=30 stroke="#856d04" stroke-width="2" fill="none"></circle>
+              </svg>
+              <i class='bx bxl-facebook'></i>
+            </a>
+            </div>
+            </div>
+            <div class="instagram">
+            <p id="instagram">
+                Puedes consultarnos por instagram en caso de que tengas dudas sobre precios o el stock disponible, nuestros empleados le ofreceran la mejor de las atenciones.
+            </p>
+            <div class="icon">
+              <a href="https://www.instagram.com/aaron.torre_">
+              <svg heigth="80" width="80">
+                <circle cx="30" cy="30" r=30 stroke="#856d04" stroke-width="2" fill="none"></circle>
+              </svg>
+              <i class='bx bxl-instagram'></i>
+            </a>
+            </div>
+        </div>
+        <div class="whatsapp ">
+            <p id="whatsapp">
+                 Contactanos por whatsapp para hablar con nuestros tecnicos sobre cualquier duda que se te presente sobre los componentes, ofrecemos asesoramientos gratis a nuestros clientes.
+            </p>
+            <div class="icon">
+              <a href="https://wa.me/3471349800/">
+              <svg heigth="80" width="80">
+                <circle cx="30" cy="30" r=30 stroke="#856d04" stroke-width="2" fill="none"></circle>
+              </svg>
+              <i class='bx bxl-whatsapp'></i>
+            </a>
+            </div>
+        </div>
+            <div class="twitter">
+            <p id="twitter">
+                 En twitter podras enterarte de los nuevos componentes y piezas que traeremos proximamente a la tienda, no te pierdas las novedades.
+            </p>
+            <div class="icon">
+              <a href="https://twitter.com">
+              <svg heigth="80" width="80">
+                <circle cx="30" cy="30" r=30 stroke="#856d04" stroke-width="2" fill="none"></circle>
+              </svg>
+              <i class='bx bxl-twitter'></i>
+            </a>
+       </div>
+      </div>
+     </div>
+    </div>
+            <p id="descripcion">
+                Esta pestaña de la pagina esta dedicada a resolver las dudas que se le puedan presentar a nuestros compradores o inversores, no dude en consultar cualquier inquietud que le surga.
+                <br>
+                <br>
+                Esperamos esta pestaña le sea de ayuda y encuentre la solución a todos los problemas que se le presentan, en caso de que no le sea de ayuda no dude en dirigirse a nuestra sucursal mas cercana para recibir ayuda en persona de nuestros tecnicos.
+             </p>
+             <h1 id="satisfaccion">
+                <center>Indicanos tu satisfacción con esta slider a continuación</center>
+             </h1>
+             <br>
+             <br>
+            <div class="container">
+            <i class="material-icons" id="emoji">
+            </i>
+            <input type="range" min="0" max="4"value="2" id="slider">
+            </div>
+            <script>
+                var slider=document.getElementById("slider");
+                var emoji=document.getElementById("emoji");
+                var emoticons=["mood_bad",
+                "sentiment_very_dissatisfied",
+                "sentiment_satisfied",
+                "sentiment_satisfied_alt",
+                "sentiment_very_satisfied"];
+                slider.oninput=function(){
+                    emoji.innerHTML=emoticons[slider.value];
+                }
+            </script>
+        <main>
+
+    <div class="menu__side" id="menu_side">
+
+        <div class="name__page">
+            <img src="img-svg/70648-200.png" height="35" width="35">
+            <h4>ComprarIA Components</h4>
+        </div>
+
+        <div class="options__menu">
+            <a href="index.html">
+                <div class="option">
+                    <img src="img-svg/dashboard.svg" title="Inicio">
+                    <h4>inicio</h4>
+                </div>
+            </a>
+            <a href="productos.html" >
+                <div class="option">
+                    <img src="img-svg/productos.svg" title="Productos">
+                    <h4>Productos</h4>
+                </div>
+            </a>
+            <a href="#" class="selected">
+                <div class="option">
+                    <img src="img-svg/telefono.svg" title="Contacto">
+                    <h4>Contacto</h4>
+                </div>
+            </a>
+            <a href="nosotros.html">
+                <div class="option">
+                    <img src="img-svg/nosotros.svg" title="Nosotros">
+                    <h4>Nosotros</h4>
+                </div>
+            </a>
+        </div>
+
+    </div>
+    <script src="java/menu.js"></script>
+</body>
+</html>

@@ -1,0 +1,199 @@
+.contacto{
+    position:relative;
+    width: 80px;
+    height: 80px;
+    margin: 20px;
+    border-radius: 50%;
+}
+#satisfaccion {
+  font-size: 25px;
+}
+#contactos{
+    font-family: 'Bebas Neue', sans-serif;
+    margin-top: 80px ;
+    display: flex;
+    margin-left: 570px;
+    font-size: 35px;
+    padding-bottom: 5px;
+}
+
+.icon{
+    cursor: pointer;
+    position:relative;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    transition: all .8s;
+    margin-left: 38%;
+    margin-bottom: 25px;
+  }
+  .icon:hover{
+    background-color: #000;
+    box-shadow: 0 0 20px #263029;
+  }
+  .icon:hover:nth-child(2){
+    background-color: #000;
+    box-shadow: 0 0 20px #263029;
+  }
+  .icon:hover:nth-child(3){
+    background-color: #000;
+    box-shadow: 0 0 20px #263029;
+  }
+  .icon:hover:nth-child(4){
+    background-color: #000;
+    box-shadow: 0 0 20px #263029;
+  }
+  
+  .icon i {
+    color: #856d04;
+    position: absolute;
+    top: 7%;
+    left: 50%;
+    transform: translate(-50%,50%);
+    font-size: 1.7rem;
+  }
+  
+  svg circle{
+    stroke-dasharray:50;
+    transition: all .8s ease-in-out;
+  }
+  
+  .icon:hover circle{
+    stroke-dasharray: 200;
+  }
+  #descripcion{
+    border: 5px solid #302d2d;
+    margin: 0 auto;
+    border-radius: 1rem;
+    background-size: cover; 
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 20px;
+    display: flex;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  #facebook{
+    margin: 30px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    align-items: center;
+    padding: 10px;
+  }
+  #instagram{
+    margin: 30px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    justify-content: center;
+    padding: 5px;
+  }
+  #whatsapp{
+    margin: 30px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    justify-content: center;
+    padding: 5px;
+  }
+  #twitter{
+    margin: 30px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    justify-content: center;
+    padding: 5px;
+  }
+.facebook{
+width: 100%;
+margin: 20px;
+border-radius: 6px;
+overflow: hidden;
+background-color: rgb(126, 125, 125, 0.432);
+box-shadow: 0px 1px 10px rgb(0, 0, 0 , 0,2);
+cursor: default;
+transition: all 1s;
+}
+.facebook p1{
+  text-align: center;
+  padding: 5px;
+}
+.facebook:hover{
+  box-shadow: 5px 5px 20px rgb(35, 35, 230);
+  transform: translateY(-6%);
+}
+.instagram{
+  width: 100%;
+  margin: 20px;
+  border-radius: 6px;
+  overflow: hidden;
+  background-color: rgb(126, 125, 125, 0.432);
+  box-shadow: 0px 1px 10px rgb(0, 0, 0 , 0,2);
+  cursor: default;
+  transition: all 1s;
+}
+.instagram:hover{
+  box-shadow: 5px 5px 20px rgb(182, 65, 172);
+  transform: translateY(-6%);
+}
+.twitter{
+  width: 100%;
+  margin: 20px;
+  border-radius: 6px;
+  overflow: hidden;
+  background-color: rgba(126, 125, 125, 0.432);
+  box-shadow: 0px 1px 10px rgb(0, 0, 0 , 0,2);
+  cursor: default;
+  transition: all 1s;
+}
+.twitter:hover{
+  box-shadow: 5px 5px 20px skyblue;
+  transform: translateY(-6%);
+}
+.whatsapp{
+  width: 100%;
+  margin: 20px;
+  border-radius: 6px;
+  overflow: hidden;
+  background-color: rgb(126, 125, 125, 0.432);
+  box-shadow: 0px 1px 10px rgb(0, 0, 0 , 0,2);
+  cursor: default;
+  transition: all 1s;
+}
+.whatsapp:hover{
+  box-shadow: 5px 5px 20px greenyellow;
+  transform: translateY(-6%);
+}
+
+
+.contenedor-contactos{
+  display: flex;
+  padding: 10px;
+  justify-content: center;
+  text-align: center;
+}
+input[type="range"]{
+  width: 90vw;
+  height: 6px;
+  -webkit-appearance: none;
+  background-color: white;
+  border-radius: 6px;
+  outline: none;
+  margin-top: 60px;
+}
+input[type="range"]::-webkit-slider-thumb{
+  -webkit-appearance: none;
+  height: 30px;
+  width: 30px;
+  background-color: white;
+  border-radius: 50%;
+  
+}
+.container{
+  height: 20vh;
+  width: 92vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.material-icons{
+  font-size: 130px;
+  color: rgb(3, 2, 5);
+}
